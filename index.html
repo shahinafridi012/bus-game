@@ -1,12 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <!-- daisy and tailwind -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+    <header class="lg:w-[1173px] mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li>Home</li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl">BUS-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-5 gap-10">
+               <li>Home</li>
+               <li>About</li>
+               <li>Destination</li>
+               <li>Search</li>
+              </ul>
+            </div>
+            <div class="navbar-end ">
+              <a class="btn bg-[#1DD1001A] text-green-600">Bus
+                <img src="/images/bus-icon.png" alt="">
+              </a>
+            </div>
+          </div>
+    </header>
+    <main>
+        <section class="background-container relative">
+            <div class="hero  lg:w-[1171px] mx-auto lg:h-[550px] relative" style="background-image: url(/images/banner.png);">
+               
+                <div class="hero-content text-center text-neutral-content relative ">
+                  <div class="lg:w-[600px] md:w-[300px]">
+                    <h1 class="mb-5 text-5xl font-bold md:text-5xl md:p-2">End-to-End Travel with <br><span class="text-[#1DD100]">P Paribahan</span></h1>
+                    <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                    <button class="btn btn-success bg-[#1DD100] text-black">Buy Tickets</button>
+                    
+                    </div>
+                  </div>
+                </div> 
+        </section>
+        <section class=" relative bottom-20 items-center flex justify-center  ">
+           <div>
+            <div class="flex lg:w-[1000px] mx-auto relative gap-5 ">
+                <div>
+                        <img src="/images/Group 11.png" alt="">
+                </div>
+                <div>
+                    <img src="/images/Group 12.png" alt="">
+                </div>
+                <div>
+                    <img src="/images/Group 13.png" alt="">
+                </div>
+            </div>
+           </div>
+        </section>
+        <section>
+            <div class="text-center items-center">
+        <h1 class="text-5xl text-black font-extrabold">Best offers for you</h1>
+            </div>
+            <div class="flex items-center justify-center space-x-10 mt-10">
+                <div class="lg:w-[573px]"><img src="/images/Group 113.png " alt=""></div>
+                <div class="lg:w-[573px]"><img src="/images/Group 113.png " alt=""></div>
+            </div>
+            <div class=" flex items-center justify-center mx-auto mt-10"><button class="btn btn-outline btn-success  ">See All Offers</button></div>
+        </section>
+    </main>
+    <main class="mt-20 bg-[#F7F8F8] rounded-t-2xl border-[#1DD100] rounded-2xl min-h-screen w-full">
+      <div>
+        h1.text-5xl
+      </div>
+      <section class="bg-[#F7F8F8">
+        <!-- Tickets-counter -->
+      <div>
+        <div></div>
+        <div></div>
+      </div>
+      </section>
+    </main>
 </body>
 </html>

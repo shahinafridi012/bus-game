@@ -1,0 +1,66 @@
+.container {
+    /* border: 2px solid red; */
+    border-left: 4px dotted blue
+}
+/* <section class="bg-[#F7F8F8] min-h-full">
+<!-- main section or title here  -->
+<div class="text-center mt-20 space-y-10">
+<h1 class="text-5xl font-extrabold text-black pt-20">P.H Paribahan</h1>
+<p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+</div>
+<!-- there is the destination from here -->
+<div class="lg:w-[1170px] mx-auto bg-white flex justify-between">
+<div class="flex text-center gap-3 ">
+  <div>
+   <img src="/images/bus-logo.png" alt="">
+  </div>
+  <div>
+    <h1 class="text-4xl font-extrabold text-black">Greenline Paribahan</h1>
+    <p>Coach-009-WEB ! AC_Business</p>
+  </div>
+</div>
+<div>
+  <button class="btn  bg-[#1DD1001A] text-green-600"><img src="/images/seat-green-filled.png" alt="">40 Seats left</button>
+</div>
+</div>
+<div class="bg-[#F7F8F8] rounded-2xl mt-5">
+<div class="flex justify-evenly">
+  <div>Route</div>
+  <div><h1 class="font-semibold">Dhaka - Sylhet</h1></div>
+  <div class="border-black border-dotted">
+    <hr class="text-black">
+  </div>
+  </div>
+</div>
+
+
+<div class="flex justify-evenly mt-5">
+  <div>Departure Time</div>
+  <div class="font-semibold"><span class="pt-1 font-semibold">9</span>:00 PM</div>
+  <div class="border-black border-dotted"></div>
+</div>
+<div class="flex lg:w-[744px] mx-auto gap-4">
+<div>
+  <button class="btn btn-active btn-ghost">Boarding Point - Laxmipur</button>
+</div>
+<div>
+  <button class="btn btn-active btn-ghost">Dropping Point - Bogura</button>
+</div>
+<div>
+  <button class="btn btn-active btn-ghost">Est. Time - 11 Hour</button>
+</div>
+<div class="flex-1 ">
+  <div class="text-center flex  items-center justify-end">
+    <div>
+      <img src="/images/fare.png" alt="">
+      <br>
+      <h1 class="text-black text-5xl font-extrabold">550Taka</h1>
+      <p>Per Seat</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="container flex-1">
+</section> */
