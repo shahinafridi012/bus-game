@@ -1,7 +1,6 @@
-.container {
+/* .container {
     /* border: 2px solid red; */
-    border-left: 4px dotted blue
-}
+
 /* <section class="bg-[#F7F8F8] min-h-full">
 <!-- main section or title here  -->
 <div class="text-center mt-20 space-y-10">
@@ -64,3 +63,159 @@
 </div>
 <div class="container flex-1">
 </section> */
+/* <div class=" ">
+    A
+    <button class="btn btn-active btn-ghost">A1</button>
+    <button class="btn btn-active btn-ghost">A2</button>
+    <button class="btn btn-active btn-ghost">A3</button>
+    <button class="btn btn-active btn-ghost">A4</button>
+  </div>
+  <div class="">
+    B
+    <button class="btn btn-active btn-ghost">B1</button>
+    <button class="btn btn-active btn-ghost">B2</button>
+    <button class="btn btn-active btn-ghost">B3</button>
+    <button class="btn btn-active btn-ghost">B4</button>
+  </div>
+  <div class="">
+    C
+    <button class="btn btn-active btn-ghost">C1</button>
+    <button class="btn btn-active btn-ghost">C2</button>
+    <button class="btn btn-active btn-ghost">C3</button>
+    <button class="btn btn-active btn-ghost">C4</button>
+  </div>
+  <div class="">
+    D
+    <button class="btn btn-active btn-ghost">D1</button>
+    <button class="btn btn-active btn-ghost">D2</button>
+    <button class="btn btn-active btn-ghost">D3</button>
+    <button class="btn btn-active btn-ghost">D4</button>
+  </div>
+  <div class="">
+    E
+    <button class="btn btn-active btn-ghost">E1</button>
+    <button class="btn btn-active btn-ghost">E2</button>
+    <button class="btn btn-active btn-ghost">E3</button>
+    <button class="btn btn-active btn-ghost">E4</button>
+  </div>
+  <div class="">
+    F
+    <button class="btn btn-active btn-ghost">F1</button>
+    <button class="btn btn-active btn-ghost">F2</button>
+    <button class="btn btn-active btn-ghost">F3</button>
+    <button class="btn btn-active btn-ghost">F4</button>
+  </div>
+  <div class="">
+    G
+    <button class="btn btn-active btn-ghost">G1</button>
+    <button class="btn btn-active btn-ghost">G2</button>
+    <button class="btn btn-active btn-ghost">G3</button>
+    <button class="btn btn-active btn-ghost">G4</button>
+  </div>
+  <div class="">
+    H
+    <button class="btn btn-active btn-ghost">H1</button>
+    <button class="btn btn-active btn-ghost">H2</button>
+    <button class="btn btn-active btn-ghost">H3</button>
+    <button class="btn btn-active btn-ghost">H4</button>
+  </div>
+  
+</div> */
+
+
+
+
+/* <section class="bg-[#FFFFFF] w-[1170px] mx-auto rounded-2xl ">
+<div class="flex">
+<!-- seat of public -->
+<div>
+<h3 class="text-3xl font-extrabold">Select Your Seat</h3>
+<hr>
+<div>
+  <div>
+    <img src="/images/seat-gray.png" alt="">
+  </div>
+  <div>
+<img src="/images/seat-green.png" alt="">
+  </div>
+</div>
+<hr>
+</div>
+<!-- booking button -->
+<div></div>
+
+
+
+
+
+
+
+
+
+
+<div >
+  <h3 class="text-3xl font-extrabold">Select Your Seat</h3>
+<div class="bg-[#F7F8F8] w-[435px] h-[335px] rounded-2xl p-5 space-y-3">
+<div class="flex justify-around">
+  <div><h1 class="text-1xl text-black font-bold">Seat</h1></div>
+  <div><h1 class="text-1xl text-black font-bold">Class</h1></div>
+  <div><h1 class="text-1xl text-black font-bold">Price</h1></div>
+
+</div>
+<hr>
+<div class="flex justify-around">
+  <div><h1 class="text-1xl text-black ">C2</h1></div>
+  <div><h1 class="text-1xl text-black ">Economoy</h1></div>
+  <div><h1 class="text-1xl text-black font-bold">550</h1></div>
+</div>
+<hr>
+<div class="flex justify-around">
+  <div><h1 class="text-1xl text-black ">C2</h1></div>
+  <div><h1 class="text-1xl text-black ">Economoy</h1></div>
+  <div><h1 class="text-1xl text-black font-bold">550</h1></div>
+</div>
+<hr>
+<div class="flex justify-between">
+  <div class="font-extrabold text-xl">Total Price</div>
+  <div class="font-extrabold text-xl">BDT <span>1100</span></div>
+</div>
+<div class="flex rounded-full">
+ <!-- <input type="text"><button class="btn bg-[#1DD100] text-white p-3">Apply</button> -->
+ <select class="select w-full max-w-xs" disabled>
+  <option>Have any copupon?</option>
+</select>
+<div><button class="btn bg-[#1DD100] text-white">Apply</button></div>
+</div>
+<div>
+  <div class="bg-[#FFFFFF]">
+    <label class="form-control w-full max-w-xs">
+      <div class="label">
+        <span class="label-text">Passenger Name*</span>
+      </div>
+      <input type="text" placeholder="Enter your name" class="input input-bordered w-full max-w-xs" />
+      <div class="label">
+      </div>
+    </label>
+    <label class="form-control w-full max-w-xs">
+      <div class="label">
+        <span class="label-text">Enter your phone number</span>
+      </div>
+      <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+      <div class="label">
+      </div>
+    </label>
+    <label class="form-control w-full max-w-xs">
+      <div class="label">
+        <span class="label-text">Enter your email id</span>
+      </div>
+      <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+      <div class="label">
+        <button class="bg-[#1DD100] text-white w-full p-3 rounded-2xl ">Next</button>
+      </div>
+    </label>
+  </div>
+</div>
+</div>
+</div>
+</div>
+      </section> */
