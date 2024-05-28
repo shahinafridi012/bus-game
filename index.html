@@ -9,8 +9,8 @@
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header class="lg:w-[1173px] mx-auto">
+<body class="">
+    <header class="lg:w-[1173px] mx-auto hidden">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
               <div class="dropdown">
@@ -41,8 +41,8 @@
             </div>
           </div>
     </header>
-    <main>
-        <section class="background-container relative">
+    <main class="">
+        <section class="background-container relative hidden">
             <div class="hero  lg:w-[1171px] mx-auto lg:h-[550px] relative" style="background-image: url(/images/banner.png);">
                
                 <div class="hero-content text-center text-neutral-content relative ">
@@ -55,7 +55,7 @@
                   </div>
                 </div> 
         </section>
-        <section class=" relative bottom-20 items-center flex justify-center  ">
+        <section class=" relative bottom-20 items-center flex justify-center hidden  ">
            <div>
             <div class="flex lg:w-[1000px] mx-auto relative gap-5 ">
                 <div>
@@ -70,7 +70,7 @@
             </div>
            </div>
         </section>
-        <section>
+        <section class="hidden">
             <div class="text-center items-center">
         <h1 class="text-5xl text-black font-extrabold">Best offers for you</h1>
             </div>
@@ -82,7 +82,7 @@
         </section>
     </main>
     
-    <main class=" bg-[#F7F8F8] rounded-t-2xl rounded-2xl mt-10 ">
+    <main class=" bg-[#F7F8F8] rounded-t-2xl rounded-2xl mt-10 hidden ">
  
 <section  class="bg-[#F8F8F8] p-10 rounded-t-[100px] border-t-4 border-[#1DD100A3]">
   <div class="lg:max-w-6xl mx-auto my-10 mb-[100px]">
@@ -102,17 +102,17 @@
         <p>Coach-009-WEB ! AC_Business</p>
         <div class="bg-[#F7F8F8] w-[813px] space-y-10 mt-5 rounded-2xl p-5 ">
 <div class="flex justify-between"><h1 class="text-black text-2xl ">Route</h1>
-<h1 class="text-2xl font-extrabold text-black">Dhaka - Sylhet</h1>
-</div>
-<hr>
-<div class="flex justify-between"><h1 class="text-black text-2xl ">Departure Time</h1>
-<h1 class="text-2xl font-extrabold text-black">9:00 PM</h1>
-</div>
-<hr>
-<div class=" flex justify-around">
-<div><button class="btn btn-active btn-ghost">Boarding Point - Laxmipur</button></div>
-<div><button class="btn btn-active btn-ghost">Dropping Point - Bogura</button></div>
-<div><button class="btn btn-active btn-ghost">Est. Time - 11 Hour</button></div>
+                        <h1 class="text-2xl font-extrabold text-black">Dhaka - Sylhet</h1>
+                        </div>
+                        <hr>
+                        <div class="flex justify-between"><h1 class="text-black text-2xl ">Departure Time</h1>
+                        <h1 class="text-2xl font-extrabold text-black">9:00 PM</h1>
+                        </div>
+                        <hr>
+                        <div class=" flex justify-around">
+                        <div><button class="btn btn-active btn-ghost">Boarding Point - Laxmipur</button></div>
+                        <div><button class="btn btn-active btn-ghost">Dropping Point - Bogura</button></div>
+                <div><button class="btn btn-active btn-ghost">Est. Time - 11 Hour</button></div>
 
 </div>
 
@@ -133,7 +133,7 @@
       </div>
     </div>
     </section>
-<section class="">
+<section class="hidden">
     <div id="section" class="bg-white p-8 rounded-3xl mt-[1.625rem] flex justify-between flex-col lg:flex-row">
         <div class="w-7/12">
             <div>
@@ -430,7 +430,25 @@
 </section>
 
     </main>
-    <footer class="footer p-10 bg-base-200 text-base-content">
+    <section>
+        <div class="bg-[#FFFFFF] lg:w-[718px] min-h-screen mx-auto items-center text-center justify-center flex ">
+            <div>
+                <div class="justify-center items-center flex-1">
+                    <img src="/images/success.png" alt="">
+                </div>
+            </div>
+           <div>
+            <h1 class="text-2xl font-extrabold text-green-600">SUCCESS</h1>
+            <h1 class="text-2xl font-extrabold">Thank you for Booking Our Bus Seats. </h1>
+            <h1 class="text-2xl font-extrabold">We are working hard to find the best service and deals for you. </h1>
+            <p>Shortly you will find a confirmation in your email.</p>
+            <button
+                        class="bg-[#1DD100] text-white rounded-full text-base font-semibold border-2 border-transparent hover:border-[#1DD100] hover:bg-white hover:text-[#1DD100] py-[0.625rem] px-[1.0625rem]">Continue</button>
+           </div>
+        </div>
+    </section>
+   
+    <footer class="footer p-10 bg-base-200 text-base-content hidden ">
         <nav>
           <h6 class="footer-title">Services</h6> 
           <a class="link link-hover">Branding</a>
