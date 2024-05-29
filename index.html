@@ -82,16 +82,16 @@
         </section>
     </main>
     
-    <main class=" bg-[#F7F8F8] rounded-t-2xl rounded-2xl mt-10  ">
+    <main id="finishd" class=" bg-[#F7F8F8] rounded-t-2xl rounded-2xl mt-10  ">
  
 <section   class="bg-[#F8F8F8] p-10 rounded-t-[100px] border-t-4 border-[#1DD100A3]">
-  <div class="lg:max-w-6xl mx-auto my-10 mb-[100px]">
+  <div  class="lg:max-w-6xl mx-auto my-10 mb-[100px]">
      
     <div class="mt-10">
       <h1 class="text-5xl font-extrabold text-center mt-10">P.H Paribahan</h1>
       <p class="text-center mt-10">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
     </div>
-    <section class="bg-[#F7F8F8] mt-10 p-5">
+    <section id="tor-kita-hide-kora-lagbo-ni" class="bg-[#F7F8F8] mt-10 p-5">
       <!-- Tickets-counter -->
     <div class="main-conatainer flex bg-[#FFFFFF] rounded-2xl lg:w-[1170px] mx-auto  ">
       <div class="flex justify-evenly gap-5">
@@ -118,7 +118,7 @@
 
         </div>
       </div>
-      <div class="flex "><button class="btn bg-[#1DD1001A] text-green-600"><img src="/images/seat-green-filled.png" alt=""><span>40</span> Seats left</button></div>
+      <div class="flex "><button class="btn bg-[#1DD1001A] text-green-600"><img src="/images/seat-green-filled.png" alt=""><span id="seats_left">40</span> Seats left</button></div>
       <!-- time and destination -->
       </div>
 
@@ -133,7 +133,7 @@
       </div>
     </div>
     </section>
-<section class="">
+<section id="HideELement" class="">
     <div id="section" class="bg-white p-8 rounded-3xl mt-[1.625rem] flex justify-between flex-col lg:flex-row">
         <div class="w-7/12">
             <div>
@@ -310,7 +310,7 @@
                     <div class="flex items-center gap-1">
                         <p class="text-base font-medium">Seat</p>
                         <p id="select-count"
-                            class="bg-[#1DD100] rounded-lg text-xs font-bold px-2 text-white max-w-max">0
+                            class="bg-[#1DD100] rounded-lg text-xs font-bold px-2 text-white max-w-max"><span id="select-seat">0</span>
                         </p>
                     </div>
                     <p class="text-base font-medium">Class</p>
@@ -335,7 +335,7 @@
                         title="select 4 seats to apply">Apply</button></div>
                 <div class="text-base font-medium flex justify-between">
                     <p>Total</p>
-                    <p>BDT <span >0</span></p>
+                    <p>BDT <span id="total-price-1">0</span></p>
                 </div>
             </div>
 
@@ -350,9 +350,9 @@
                 <p class="text-base font-semibold mt-6 mb-4">Email ID</p>
                 <input type="email" placeholder="Enter your email id"
                     class="border-2 border-[#0307121A] rounded-xl indent-6 py-[1.375rem]">
-                <button
+                <button onclick="completed()"
                     class="bg-[#1DD100] text-white rounded-2xl text-xl font-extrabold font-raleway border-2 border-transparent hover:border-[#1DD100] hover:bg-white hover:text-[#1DD100] py-[1.3125rem] px-[1.875rem] my-6"
-                    >Next</button>
+                    > Next </button>
 
 
                 <div class="flex justify-evenly text-base text-[#03071299] font-normal underline">
@@ -365,7 +365,7 @@
 </section>
 
     </main>
-    <section class="hidden">
+    <section id="Its-my-time" class="hidden">
         <div class="bg-[#FFFFFF] lg:w-[718px] min-h-screen mx-auto items-center text-center justify-center flex ">
             <div>
                 <div class="justify-center items-center flex-1">
@@ -377,13 +377,13 @@
             <h1 class="text-2xl font-extrabold">Thank you for Booking Our Bus Seats. </h1>
             <h1 class="text-2xl font-extrabold">We are working hard to find the best service and deals for you. </h1>
             <p>Shortly you will find a confirmation in your email.</p>
-            <button
+            <button onclick="BookingForm()" id="success-the-mission" 
                         class="bg-[#1DD100] text-white rounded-full text-base font-semibold border-2 border-transparent hover:border-[#1DD100] hover:bg-white hover:text-[#1DD100] py-[0.625rem] px-[1.0625rem]">Continue</button>
            </div>
         </div>
     </section>
     <script src="/script/index.js"></script>
-    <footer class="footer p-10 bg-base-200 text-base-content  ">
+    <footer id="footer" class="footer p-10 bg-base-200 text-base-content  ">
         <nav>
           <h6 class="footer-title">Services</h6> 
           <a class="link link-hover">Branding</a>
