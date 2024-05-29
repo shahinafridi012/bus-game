@@ -9,8 +9,8 @@
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="">
-    <header class="lg:w-[1173px] mx-auto hidden">
+<body  class="">
+    <header id="header-container" class="lg:w-[1173px] mx-auto ">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
               <div class="dropdown">
@@ -26,7 +26,7 @@
               </div>
               <a class="btn btn-ghost text-xl">BUS-Ticket</a>
             </div>
-            <div class="navbar-center hidden lg:flex">
+            <div class="navbar-center  lg:flex">
               <ul class="menu menu-horizontal px-5 gap-10">
                <li>Home</li>
                <li>About</li>
@@ -41,21 +41,21 @@
             </div>
           </div>
     </header>
-    <main class="">
-        <section class="background-container relative hidden">
+    <main id="destination"  class="">
+        <section class="background-container relative ">
             <div class="hero  lg:w-[1171px] mx-auto lg:h-[550px] relative" style="background-image: url(/images/banner.png);">
                
                 <div class="hero-content text-center text-neutral-content relative ">
                   <div class="lg:w-[600px] md:w-[300px]">
                     <h1 class="mb-5 text-5xl font-bold md:text-5xl md:p-2">End-to-End Travel with <br><span class="text-[#1DD100]">P Paribahan</span></h1>
                     <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-                    <button class="btn btn-success bg-[#1DD100] text-black">Buy Tickets</button>
+                    <button onclick="BookingForm()" class="btn btn-success bg-[#1DD100] text-black">Buy Tickets</button>
                     
                     </div>
                   </div>
                 </div> 
         </section>
-        <section class=" relative bottom-20 items-center flex justify-center hidden  ">
+        <section class=" relative bottom-20 items-center flex justify-center   ">
            <div>
             <div class="flex lg:w-[1000px] mx-auto relative gap-5 ">
                 <div>
@@ -70,21 +70,21 @@
             </div>
            </div>
         </section>
-        <section class="hidden">
+        <section class="">
             <div class="text-center items-center">
         <h1 class="text-5xl text-black font-extrabold">Best offers for you</h1>
             </div>
             <div class="flex items-center justify-center space-x-10 mt-10">
-                <div class="lg:w-[573px]"><img src="/images/Group 113.png " alt=""></div>
+                <div class="lg:w-[573px] origin-right"><img src="/images/Group 113.png " alt=""></div>
                 <div class="lg:w-[573px]"><img src="/images/Group 113.png " alt=""></div>
             </div>
             <div class=" flex items-center justify-center mx-auto mt-10"><button class="btn btn-outline btn-success  ">See All Offers</button></div>
         </section>
     </main>
     
-    <main class=" bg-[#F7F8F8] rounded-t-2xl rounded-2xl mt-10 hidden ">
+    <main class=" bg-[#F7F8F8] rounded-t-2xl rounded-2xl mt-10  ">
  
-<section  class="bg-[#F8F8F8] p-10 rounded-t-[100px] border-t-4 border-[#1DD100A3]">
+<section   class="bg-[#F8F8F8] p-10 rounded-t-[100px] border-t-4 border-[#1DD100A3]">
   <div class="lg:max-w-6xl mx-auto my-10 mb-[100px]">
      
     <div class="mt-10">
@@ -133,7 +133,7 @@
       </div>
     </div>
     </section>
-<section class="hidden">
+<section class="">
     <div id="section" class="bg-white p-8 rounded-3xl mt-[1.625rem] flex justify-between flex-col lg:flex-row">
         <div class="w-7/12">
             <div>
@@ -154,20 +154,13 @@
                     <p>A</p>
                     <div class="flex justify-between w-full">
                         <div class="flex gap-8">
-                            <p
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">A1
-                            </p>
-                            <p 
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">A2
-                            </p>
+                            <button id="button" onclick="colorButton()"  class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">A1</button>
+                            <button id="button-1" onclick="colorButton_1()"   class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">A2</button>
+                           
                         </div>
                         <div class="flex gap-8">
-                            <p 
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">A3
-                            </p>
-                            <p 
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">A4
-                            </p>
+                            <button  class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">A3</button>
+                            <button  class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">A4</button>
                         </div>
                     </div>
                 </div>
@@ -175,20 +168,12 @@
                     <p>B</p>
                     <div class="flex justify-between w-full">
                         <div class="flex gap-8">
-                            <p 
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">B1
-                            </p>
-                            <p
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">B2
-                            </p>
+                            <button id="button_2" onclick="colorButton_2()" class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">B1</button>
+                            <button id="button_3" onclick="colorButton_3()" class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">B2</button>
                         </div>
                         <div class="flex gap-8">
-                            <p 
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">B3
-                            </p>
-                            <p 
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">B4
-                            </p>
+                            <button id="button_4" onclick="colorButton_4()" class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">B3</button>
+                            <button id="button_5" onclick="colorButton_5()" class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">B4</button>
                         </div>
                     </div>
                 </div>
@@ -196,20 +181,12 @@
                     <p>C</p>
                     <div class="flex justify-between w-full">
                         <div class="flex gap-8">
-                            <p 
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">C1
-                            </p>
-                            <p 
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">C2
-                            </p>
+                            <button id="button_6" onclick="colorButton_6()" class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">C1</button>
+                            <button id="button-7" onclick="colorButton_7()" class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">C2</button>
                         </div>
                         <div class="flex gap-8">
-                            <p
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">C3
-                            </p>
-                            <p 
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">C4
-                            </p>
+                            <button id="button_8" onclick="colorButton_8()" class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">C3</button>
+                            <button id="button_9" onclick="colorButton_10()" class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">C4</button>
                         </div>
                     </div>
                 </div>
@@ -217,20 +194,14 @@
                     <p>D</p>
                     <div class="flex justify-between w-full">
                         <div class="flex gap-8">
-                            <p
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">D1
-                            </p>
-                            <p 
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">D2
-                            </p>
+                            <button id="button_11" onclick="colorButton_12()" class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">D1</button>
+                            <button id="button_13" onclick="colorButton_14()" class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">D2</button>
+                           
                         </div>
                         <div class="flex gap-8">
-                            <p 
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">D3
-                            </p>
-                            <p 
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">D4
-                            </p>
+                            <button id="button_15" onclick="colorButton_16()" class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">D3</button>
+                            <button id="button_17" onclick="colorButton_17()" class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">D4</button>
+                            
                         </div>
                     </div>
                 </div>
@@ -238,20 +209,14 @@
                     <p>E</p>
                     <div class="flex justify-between w-full">
                         <div class="flex gap-8">
-                            <p
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">E1
-                            </p>
-                            <p
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">E2
-                            </p>
+                            <button id="button_18" onclick="colorButton_19()" class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">E1</button>
+                            <button id="button_20" onclick="colorButton_21()" class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">E2</button>
+                           
                         </div>
                         <div class="flex gap-8">
-                            <p 
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">E3
-                            </p>
-                            <p 
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">E4
-                            </p>
+                            <button  class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">E3</button>
+                            <button  class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">E4</button>
+                           
                         </div>
                     </div>
                 </div>
@@ -259,20 +224,14 @@
                     <p>F</p>
                     <div class="flex justify-between w-full">
                         <div class="flex gap-8">
-                            <p 
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">F1
-                            </p>
-                            <p 
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">F2
-                            </p>
+                            <button  class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">F1</button>
+                            <button  class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">F2</button>
+                           
                         </div>
                         <div class="flex gap-8">
-                            <p 
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">F3
-                            </p>
-                            <p 
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">F4
-                            </p>
+                            <button  class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">F3</button>
+                            <button  class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">F4</button>
+                          
                         </div>
                     </div>
                 </div>
@@ -280,20 +239,14 @@
                     <p>G</p>
                     <div class="flex justify-between w-full">
                         <div class="flex gap-8">
-                            <p
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">G1
-                            </p>
-                            <p 
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">G2
-                            </p>
+                            <button  class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">G1</button>
+                            <button  class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">G2</button>
+                            
                         </div>
                         <div class="flex gap-8">
-                            <p
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">G3
-                            </p>
-                            <p
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">G4
-                            </p>
+                            <button  class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">G3</button>
+                            <button  class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">G4</button>
+                           
                         </div>
                     </div>
                 </div>
@@ -301,20 +254,14 @@
                     <p>H</p>
                     <div class="flex justify-between w-full">
                         <div class="flex gap-8">
-                            <p 
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">H1
-                            </p>
-                            <p
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">H2
-                            </p>
+                            <button  class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">H1</button>
+                            <button  class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">H2</button>
+                           
                         </div>
                         <div class="flex gap-8">
-                            <p
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">H3
-                            </p>
-                            <p
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">H4
-                            </p>
+                            <button  class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">H3</button>
+                            <button  class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">H4</button>
+                          
                         </div>
                     </div>
                 </div>
@@ -322,20 +269,14 @@
                     <p>I</p>
                     <div class="flex justify-between w-full">
                         <div class="flex gap-8">
-                            <p
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">I1
-                            </p>
-                            <p
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">I2
-                            </p>
+                            <button  class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">I1</button>
+                            <button  class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">I2</button>
+                          
                         </div>
                         <div class="flex gap-8">
-                            <p
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">I3
-                            </p>
-                            <p
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">I4
-                            </p>
+                            <button  class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">I3</button>
+                            <button  class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">I4</button>
+                           
                         </div>
                     </div>
                 </div>
@@ -343,20 +284,14 @@
                     <p>J</p>
                     <div class="flex justify-between w-full">
                         <div class="flex gap-8">
-                            <p
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">J1
-                            </p>
-                            <p
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">J2
-                            </p>
+                            <button  class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">J1</button>
+                            <button  class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">J2</button>
+                          
                         </div>
                         <div class="flex gap-8">
-                            <p 
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">J3
-                            </p>
-                            <p 
-                                class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">J4
-                            </p>
+                            <button  class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">J3</button>
+                            <button  class="bg-[#F7F8F8] rounded-xl w-[6.875rem] py-[1.0625rem] text-center">J4</button>
+                            
                         </div>
                     </div>
                 </div>
@@ -430,7 +365,7 @@
 </section>
 
     </main>
-    <section>
+    <section class="hidden">
         <div class="bg-[#FFFFFF] lg:w-[718px] min-h-screen mx-auto items-center text-center justify-center flex ">
             <div>
                 <div class="justify-center items-center flex-1">
@@ -447,8 +382,8 @@
            </div>
         </div>
     </section>
-   
-    <footer class="footer p-10 bg-base-200 text-base-content hidden ">
+    <script src="/script/index.js"></script>
+    <footer class="footer p-10 bg-base-200 text-base-content  ">
         <nav>
           <h6 class="footer-title">Services</h6> 
           <a class="link link-hover">Branding</a>
@@ -482,5 +417,6 @@
           </fieldset>
         </form>
       </footer>
+      
 </body>
 </html>
